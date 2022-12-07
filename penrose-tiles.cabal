@@ -1,0 +1,14 @@
+cabal-version: 1.12
+name:          penrose-tiles
+version:       0.0.0
+build-type:    Simple
+
+executable penrose-tiles
+  main-is:          Main.hs
+  other-modules:    Paths_penrose_tiles
+  ghc-options:      -Wall
+  build-depends:
+      base      >=4 && <5
+    , diagrams
+
+  default-language: GHC2021
