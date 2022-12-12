@@ -8,7 +8,10 @@ executable penrose-tiles
   other-modules:    Paths_penrose_tiles
   ghc-options:      -Wall
   build-depends:
-      base      >=4 && <5
+      base              >=4     && <5
     , diagrams
+    , diagrams-contrib  >=1.4.4
+    , diagrams-lib
+    , diagrams-svg
 
   default-language: GHC2021
