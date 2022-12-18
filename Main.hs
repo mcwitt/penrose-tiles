@@ -7,7 +7,7 @@ import Diagrams.TwoD.Path.Boolean qualified as B
 u, v, w :: V2 Double
 u = V2 1 0
 v = u # rotate (108 @@ deg)
-w = u # scale (2.0 * sin (pi / 10.0)) # rotate (36 @@ deg)
+w = u # scale (2.0 * sinA (18 @@ deg)) # rotate (36 @@ deg)
 
 l1, l2, l3 :: Trail V2 Double
 l1 = fromOffsets [u]
@@ -47,7 +47,6 @@ main =
           )
           <> arc (direction (V2 1 0)) (-72 @@ deg) # scale rad1 # translate (p + v)
 
-      mkCirclesDart :: V2 Double -> Path V2 Double
       mkCirclesDart p =
         B.union
           Winding
